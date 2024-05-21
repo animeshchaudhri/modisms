@@ -18,19 +18,19 @@ This project is a Go program that sends concurrent HTTP PATCH requests with mult
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/go-concurrent-http-request-sender.git
-   cd go-concurrent-http-request-sender
+   git clone https://github.com/animeshchaudhri/modisms.git
+   cd modisms
    ```
 
 2. Build the Go program:
 
    ```sh
-   go build -o concurrent-request-sender main.go
+   go build -o modiji new.go
 
    ```
 
 3. usage
 
 ```sh
-  ./concurrent-request-sender
+  ./modiji
 ```

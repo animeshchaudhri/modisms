@@ -89,7 +89,7 @@ func main() {
 	// numThreads := 20
 
 	// Number of requests to send
-	numRequests := 100000
+	numRequests := 10000
 
 	// WaitGroup to wait for all goroutines to finish
 	var wg sync.WaitGroup
