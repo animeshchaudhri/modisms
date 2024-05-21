@@ -33,5 +33,5 @@ cd modisms
 ## run the code
 
 ```bash
-python exploit.py
+python new.py
 ```
