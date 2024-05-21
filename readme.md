@@ -1,36 +1,37 @@
-# Concurrent HTTP PATCH Request Sender in Go
+# Security Vulnerability: Lack of Rate Limiting on OTP Requests
 
-This project is a Go program that sends concurrent HTTP PATCH requests with multipart/form-data. The program demonstrates how to use goroutines, channels, and WaitGroups to handle concurrency effectively in Go.
+## Overview
 
-## Features
+This repository demonstrates a significant security vulnerability in the OTP request functionality of the website https://phirekbaarmodisarkar.bjp.org. The issue arises due to the absence of rate limiting on the OTP requests, making the system susceptible to abuse and potential denial-of-service attacks.
 
-- Sends multiple concurrent HTTP PATCH requests
-- Handles multipart/form-data requests
-- Uses goroutines for concurrency
-- Collects and prints responses from all requests
+## Proof of Concept
 
-## Prerequisites
+This Python script demonstrates how the lack of rate limiting can be exploited. The script sends multiple OTP requests concurrently, overwhelming the server.
 
-- Go 1.13+ installed on your machine
+## Requirements
+
+- Python 3.x
+- `requests` library
+- `requests_toolbelt` library
 
 ## Installation
 
-1. Clone the repository:
+Install the required libraries using pip:
 
-   ```sh
-   git clone https://github.com/animeshchaudhri/modisms.git
-   cd modisms
-   ```
+```bash
+pip install requests requests_toolbelt
+```
 
-2. Build the Go program:
+## Usage
 
-   ```sh
-   go build -o modiji new.go
+```bash
+git clone https://github.com/animeshchaudhri/modisms.git
+cd modisms
 
-   ```
+```
 
-3. usage
+## run the code
 
-```sh
-  ./modiji
+```bash
+python exploit.py
 ```

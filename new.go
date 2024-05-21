@@ -89,7 +89,7 @@ func main() {
 	// numThreads := 20
 
 	// Number of requests to send
-	numRequests := 10000
+	numRequests := 9000
 
 	// WaitGroup to wait for all goroutines to finish
 	var wg sync.WaitGroup
@@ -100,7 +100,7 @@ func main() {
 	// Launch goroutines
 	for i := 0; i < numRequests; i++ {
 		wg.Add(1)
-		go sendRequest(url, headers, "7668183250", &wg, results)
+		go sendRequest(url, headers, "9056025696", &wg, results)
 	}
 
 	// Wait for all goroutines to finish
